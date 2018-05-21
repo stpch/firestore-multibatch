@@ -1,0 +1,36 @@
+{
+    "name": "firestore-multibatch",
+    "version": "0.1.0",
+    "description": "",
+    "private": true,
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/stephanechorne/firestore-multibatch",
+    "repository": "https://github.com/stephanechorne/firestore-multibatch.git",
+    "bugs": "https://github.com/stephanechorne/firestore-multibatch/issues",
+    "scripts": {
+        "test": "jest --coverage --forceExit",
+        "test:ci": "jest --forceExit"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "jest": "^22.4.4"
+    },
+    "jest": {
+        "collectCoverageFrom": [
+            "<rootDir>/src/**/*.js"
+        ],
+        "coverageReporters": [
+            "text-summary",
+            "text"
+        ],
+        "setupTestFrameworkScriptFile": "<rootDir>/test/index.js",
+        "testMatch": [
+            "<rootDir>/test/**/*.js"
+        ],
+        "testEnvironment": "node",
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "<rootDir>/test/index.js"
+        ]
+    }
+}
