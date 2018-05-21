@@ -8,12 +8,90 @@
     "repository": "https://github.com/stephanechorne/firestore-multibatch.git",
     "bugs": "https://github.com/stephanechorne/firestore-multibatch/issues",
     "scripts": {
-        "test": "jest --coverage --forceExit",
-        "test:ci": "jest --forceExit"
+        "lint": "eslint .",
+        "test": "yarn lint && jest --coverage --forceExit",
+        "test:ci": "yarn lint && jest --forceExit"
     },
     "dependencies": {},
     "devDependencies": {
+        "eslint": "^4.19.1",
         "jest": "^22.4.4"
+    },
+    "engines": {
+        "node": ">= 6.14.0"
+    },
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 2016
+        },
+        "rules": {
+            "arrow-body-style": "off",
+            "arrow-parens": "off",
+            "comma-dangle": [
+                "error",
+                "always-multiline"
+            ],
+            "default-case": "off",
+            "function-paren-newline": "off",
+            "indent": "off",
+            "max-len": [
+                "warn",
+                {
+                    "code": 80,
+                    "tabWidth": 4,
+                    "ignoreUrls": true
+                }
+            ],
+            "new-cap": "off",
+            "no-confusing-arrow": "off",
+            "no-mixed-operators": [
+                "error",
+                {
+                    "allowSamePrecedence": true
+                }
+            ],
+            "no-shadow": "off",
+            "no-undef": "off",
+            "no-underscore-dangle": "off",
+            "no-use-before-define": [
+                "error",
+                "nofunc"
+            ],
+            "object-curly-newline": "off",
+            "object-curly-spacing": "off",
+            "prefer-destructuring": [
+                "error",
+                {
+                    "array": true,
+                    "object": true
+                },
+                {
+                    "enforceForRenamedProperties": false
+                }
+            ],
+            "prefer-template": "off",
+            "quotes": [
+                "error",
+                "single",
+                {
+                    "avoidEscape": true
+                }
+            ],
+            "require-jsdoc": "off",
+            "spaced-comment": "off",
+            "strict": "error",
+            "valid-jsdoc": [
+                "error",
+                {
+                    "prefer": {
+                        "returns": "returns"
+                    },
+                    "requireParamDescription": false,
+                    "requireReturn": false,
+                    "requireReturnDescription": false
+                }
+            ]
+        }
     },
     "jest": {
         "collectCoverageFrom": [
