@@ -80,7 +80,10 @@
             ],
             "require-jsdoc": "off",
             "spaced-comment": "off",
-            "strict": "error",
+            "strict": [
+                "error",
+                "global"
+            ],
             "valid-jsdoc": [
                 "error",
                 {
