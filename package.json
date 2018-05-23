@@ -1,18 +1,17 @@
 {
     "name": "firestore-multibatch",
-    "version": "0.1.0",
-    "description": "",
+    "version": "1.0.0",
+    "description": "Drop-in replacement for firebase.firestore.WriteBatch that works without batch operations limit.",
     "private": true,
     "license": "Apache-2.0",
-    "homepage": "https://github.com/stephanechorne/firestore-multibatch",
-    "repository": "https://github.com/stephanechorne/firestore-multibatch.git",
-    "bugs": "https://github.com/stephanechorne/firestore-multibatch/issues",
+    "homepage": "https://github.com/stpch/firestore-multibatch",
+    "repository": "https://github.com/stpch/firestore-multibatch.git",
+    "bugs": "https://github.com/stpch/firestore-multibatch/issues",
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && jest --coverage --verbose --forceExit",
         "test:ci": "yarn lint && jest --ci --forceExit"
     },
-    "dependencies": {},
     "devDependencies": {
         "dotenv": "^5.0.1",
         "eslint": "^4.19.1",
