@@ -9,8 +9,8 @@
     "bugs": "https://github.com/stephanechorne/firestore-multibatch/issues",
     "scripts": {
         "lint": "eslint .",
-        "test": "yarn lint && jest --coverage --forceExit",
-        "test:ci": "yarn lint && jest --forceExit"
+        "test": "yarn lint && jest --coverage --verbose --forceExit",
+        "test:ci": "yarn lint && jest --ci --forceExit"
     },
     "dependencies": {},
     "devDependencies": {
@@ -106,14 +106,12 @@
             "text-summary",
             "text"
         ],
-        "setupTestFrameworkScriptFile": "<rootDir>/test/index.js",
         "testMatch": [
             "<rootDir>/test/**/*.js"
         ],
         "testEnvironment": "node",
         "testPathIgnorePatterns": [
-            "/node_modules/",
-            "<rootDir>/test/index.js"
+            "/node_modules/"
         ]
     }
 }
