@@ -1,7 +1,9 @@
 # firestore-multibatch
 
-[![Build Status](https://travis-ci.com/stpch/firestore-multibatch.svg?branch=master)](https://travis-ci.com/stpch/firestore-multibatch)
-[![codecov](https://codecov.io/gh/stpch/firestore-multibatch/branch/master/graph/badge.svg)](https://codecov.io/gh/stpch/firestore-multibatch)
+[![Build](https://travis-ci.com/stpch/firestore-multibatch.svg?branch=master)](https://travis-ci.com/stpch/firestore-multibatch)
+[![Code coverage](https://codecov.io/gh/stpch/firestore-multibatch/branch/master/graph/badge.svg)](https://codecov.io/gh/stpch/firestore-multibatch)
+[![Dependencies](https://david-dm.org/stpch/firestore-multibatch/status.svg)](https://david-dm.org/stpch/firestore-multibatch)
+[![Dev dependencies](https://david-dm.org/stpch/firestore-multibatch/dev-status.svg)](https://david-dm.org/stpch/firestore-multibatch?type=dev)
 
 Drop-in replacement for [firebase.firestore.WriteBatch](https://firebase.google.com/docs/reference/js/firebase.firestore.WriteBatch) that works without batch operations limit.
 
