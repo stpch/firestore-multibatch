@@ -1,5 +1,7 @@
 # firestore-multibatch
 
+[![Build Status](https://travis-ci.com/stpch/firestore-multibatch.svg?branch=master)](https://travis-ci.com/stpch/firestore-multibatch)
+
 Drop-in replacement for [firebase.firestore.WriteBatch](https://firebase.google.com/docs/reference/js/firebase.firestore.WriteBatch) that works without batch operations limit.
 
 Firestore write batches are currently [limited to 500 operations](https://firebase.google.com/docs/firestore/quotas). 
