@@ -5,7 +5,8 @@ const firebase = require('firebase');
 require('firebase/firestore');
 const {MultiBatch, BATCH_LIMIT} = require('../src/index');
 
-describe('Cloud Firestore', () => {
+// Disable for now because it quickly uses up Firestore's free quota
+describe.skip('Cloud Firestore', () => {
     let db;
 
     beforeAll(() => {
