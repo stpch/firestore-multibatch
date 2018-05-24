@@ -8,9 +8,9 @@
     "repository": "https://github.com/stpch/firestore-multibatch.git",
     "bugs": "https://github.com/stpch/firestore-multibatch/issues",
     "scripts": {
-        "lint": "eslint .",
-        "test": "yarn lint && jest --coverage --verbose --forceExit",
-        "test:ci": "yarn lint && jest --ci --forceExit"
+        "lint": "eslint src test",
+        "test": "yarn lint && jest --verbose --forceExit",
+        "test:ci": "yarn lint && jest --ci --coverageReporters=lcov --forceExit && codecov"
     },
     "devDependencies": {
         "dotenv": "^5.0.1",
@@ -98,9 +98,11 @@
         }
     },
     "jest": {
+        "collectCoverage": true,
         "collectCoverageFrom": [
             "<rootDir>/src/**/*.js"
         ],
+        "coverageDirectory": "./coverage",
         "coverageReporters": [
             "text-summary",
             "text"

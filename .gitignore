@@ -5,6 +5,9 @@
 # Dependencies
 node_modules/
 
+# Build artifacts
+coverage/
+
 # Logs
 *.log
 

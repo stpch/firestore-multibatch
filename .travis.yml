@@ -5,8 +5,10 @@ node_js:
     - 6.14.0
 install:
     - yarn install
+    - yarn global add codecov
 script:
     - yarn test:ci
+    - codecov
 cache:
     yarn: true
     directories:
