@@ -1,17 +1,16 @@
-# firestore-multibatch
+# firestore-multibatch [![Build](https://travis-ci.com/stpch/firestore-multibatch.svg?branch=master)](https://travis-ci.com/stpch/firestore-multibatch) [![Code coverage](https://codecov.io/gh/stpch/firestore-multibatch/branch/master/graph/badge.svg)](https://codecov.io/gh/stpch/firestore-multibatch) [![Dependencies](https://david-dm.org/stpch/firestore-multibatch/status.svg)](https://david-dm.org/stpch/firestore-multibatch) [![Dev dependencies](https://david-dm.org/stpch/firestore-multibatch/dev-status.svg)](https://david-dm.org/stpch/firestore-multibatch?type=dev)
 
-[![Build](https://travis-ci.com/stpch/firestore-multibatch.svg?branch=master)](https://travis-ci.com/stpch/firestore-multibatch)
-[![Code coverage](https://codecov.io/gh/stpch/firestore-multibatch/branch/master/graph/badge.svg)](https://codecov.io/gh/stpch/firestore-multibatch)
-[![Dependencies](https://david-dm.org/stpch/firestore-multibatch/status.svg)](https://david-dm.org/stpch/firestore-multibatch)
-[![Dev dependencies](https://david-dm.org/stpch/firestore-multibatch/dev-status.svg)](https://david-dm.org/stpch/firestore-multibatch?type=dev)
+Drop-in replacement for [firebase.firestore.WriteBatch](https://firebase.google.com/docs/reference/js/firebase.firestore.WriteBatch) that works around Firestore's [500 batch operations limit](https://firebase.google.com/docs/firestore/quotas).
 
-Drop-in replacement for [firebase.firestore.WriteBatch](https://firebase.google.com/docs/reference/js/firebase.firestore.WriteBatch) that works without batch operations limit.
+## Installation
 
-Firestore write batches are currently [limited to 500 operations](https://firebase.google.com/docs/firestore/quotas). 
+```
+npm install firestore-multibatch
+```
 
 ## Usage
 
-```javascript
+```js
 const firebase = require('firebase');
 const {MultiBatch} = require('firestore-multibatch');
 
