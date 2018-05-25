@@ -1,6 +1,6 @@
 # firestore-multibatch
 
-[![NPM version](https://badge.fury.io/js/firestore-multibatch.svg)](https://badge.fury.io/js/firestore-multibatch)
+[![NPM version](https://badge.fury.io/js/firestore-multibatch.svg)](https://www.npmjs.com/package/firestore-multibatch)
 [![Build](https://travis-ci.com/stpch/firestore-multibatch.svg?branch=master)](https://travis-ci.com/stpch/firestore-multibatch)
 [![Code coverage](https://codecov.io/gh/stpch/firestore-multibatch/branch/master/graph/badge.svg)](https://codecov.io/gh/stpch/firestore-multibatch)
 [![Dependencies](https://david-dm.org/stpch/firestore-multibatch/status.svg)](https://david-dm.org/stpch/firestore-multibatch)
