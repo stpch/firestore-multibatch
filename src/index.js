@@ -1,12 +1,11 @@
 'use strict';
 
-// Max batch operations. See https://firebase.google.com/docs/firestore/quotas.
+// Max batch operations (see https://firebase.google.com/docs/firestore/quotas)
 const BATCH_LIMIT = 500;
 
 /**
  * Provides the same batch operations as {@link firebase.firestore.WriteBatch}
- * but uses multiple batch instances internally to work around Firebase's batch
- * limit.
+ * but uses multiple batch instances to work around Firebase's batch limit.
  */
 class MultiBatch {
     /**
