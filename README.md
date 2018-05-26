@@ -18,6 +18,7 @@ npm install firestore-multibatch
 
 ```js
 const firebase = require('firebase');
+require('firebase/firestore');
 const {MultiBatch} = require('firestore-multibatch');
 
 firebase.initializeApp({/* ... */});
