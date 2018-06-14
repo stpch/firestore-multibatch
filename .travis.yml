@@ -8,7 +8,6 @@ install:
     - yarn global add codecov
 script:
     - yarn test:ci
-    - codecov
 cache:
     yarn: true
     directories:
